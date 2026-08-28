@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Setup and troubleshooting help for PointerDeck on iPhone, iPad, and Mac.">
+  <title>Support — PointerDeck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p class="draft-banner" role="status">PointerDeck is preparing for launch. The app and Receiver are not yet publicly available.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">PD</span>PointerDeck</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Product</a>
+      <a href="mac.html">Mac receiver</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="page-shell prose" id="main-content">
+    <p class="eyebrow">PointerDeck support</p>
+    <h1 class="page-title">Get the connection back.</h1>
+    <p class="lede">When released, PointerDeck will need the free PointerDeck Receiver, the same local network, Local Network permission, and Mac Accessibility permission.</p>
+
+    <h2>Quick setup check for launch</h2>
+    <ol>
+      <li>Make sure the released PointerDeck Receiver is installed in Applications and open.</li>
+      <li>Make sure the iPhone/iPad and Mac are on the same private local network, not a guest/client-isolated network.</li>
+      <li>On iPhone/iPad, open Settings &gt; Privacy &amp; Security &gt; Local Network and allow PointerDeck.</li>
+      <li>On Mac, open System Settings &gt; Privacy &amp; Security &gt; Accessibility and allow the exact PointerDeck Receiver in Applications.</li>
+      <li>Set an 8–12 digit PIN on the Mac, choose Add Device, and pair while the window is open for up to two minutes.</li>
+    </ol>
+
+    <h2>The Mac does not appear</h2>
+    <ul>
+      <li>Confirm both devices are on the same local network.</li>
+      <li>Public, corporate, hotel, and guest Wi-Fi often isolates devices; try a private network you control.</li>
+      <li>Check Local Network permission on both devices.</li>
+      <li>Quit duplicate or older receiver copies, then reopen the released receiver.</li>
+      <li>Do not forward router ports. PointerDeck is not designed for public-internet access.</li>
+    </ul>
+
+    <h2>The pointer does not move</h2>
+    <p>If PointerDeck says Connected but the pointer does not respond, verify Accessibility permission for the exact receiver installed in Applications. macOS can treat a rebuilt, moved, or differently signed copy as a different app.</p>
+
+    <h2>The saved Mac no longer reconnects</h2>
+    <p>Automatic reconnection works when both apps are open and reachable. If the saved credential was revoked or replaced, choose <strong>Forget Mac &amp; Pair Again</strong> on iPhone/iPad, reopen <strong>Add Device</strong> on Mac, and enter the current PIN.</p>
+
+    <h2>Scrolling feels reversed</h2>
+    <p>Open Trackpad Settings and choose Natural or Reversed scrolling. The Mac receiver’s incoming-scroll setting should not accidentally invert the controller twice; use the combination that produces the expected direction.</p>
+
+    <h2>Contact</h2>
+    <p>For pre-launch questions, email <a href="mailto:elaymecht@gmail.com">elaymecht@gmail.com</a>. After release, include the app/receiver versions, iOS/iPadOS and macOS versions, Mac architecture, network type, exact visible error, and reproduction steps.</p>
+    <p>Do not send a live Connection PIN, trusted-device secret, Apple ID, password, certificate, IP address, or screenshot containing unrelated personal information.</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>PointerDeck · Pre-launch information</span>
+    <span class="footer-links"><a href="mac.html">Mac receiver</a><a href="privacy.html">Privacy</a></span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Pre-launch privacy information for PointerDeck.">
+  <title>Privacy — PointerDeck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p class="draft-banner" role="status">PointerDeck is preparing for launch. The app and Receiver are not yet publicly available.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">PD</span>PointerDeck</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Product</a>
+      <a href="mac.html">Mac receiver</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="page-shell prose" id="main-content">
+    <p class="eyebrow">Pre-launch privacy notice</p>
+    <h1 class="page-title">Your trackpad commands stay between your devices.</h1>
+    <p class="lede">PointerDeck has not been publicly released. This notice describes the inspected pre-release design and this informational website. It is not yet the final App Store privacy policy.</p>
+
+    <h2>App data collection</h2>
+    <p>The inspected release design does not use a PointerDeck account, advertising SDK, analytics SDK, crash-reporting SDK, cloud backend, or application server that receives pointer commands. Pointer movement, clicks, drags, scrolling, pairing, and trusted-reconnection messages travel directly between your iPhone/iPad and Mac on the local network.</p>
+    <p>Before release, the App Store privacy declaration will be checked again against the exact signed apps, this website, and every integrated provider.</p>
+
+    <h2>Information stored on your devices</h2>
+    <ul>
+      <li>Trackpad settings are stored in app preferences.</li>
+      <li>Your iPhone/iPad stores a trusted Mac credential and receiver identity in Keychain after pairing.</li>
+      <li>Your Mac stores the owner-selected Connection PIN, receiver identity, and trusted-controller records in Keychain.</li>
+      <li>Add Device state is temporary. It is available for up to two minutes and can close earlier after manual closure, PIN change, successful pairing, or bounded rejected pair attempts.</li>
+      <li>Pointer commands are processed for real-time control and are not intentionally saved by the app.</li>
+    </ul>
+
+    <h2>Connection and permissions</h2>
+    <p>PointerDeck uses Local Network permission to find and connect to the nearby PointerDeck Receiver. The Mac receiver uses Accessibility permission to post pointer movement, click, drag, and scroll events. It does not stream or display your Mac screen.</p>
+    <p>Controller traffic is encrypted on the local network. Initial pairing uses an 8–12 digit PIN accepted only while the Mac owner opens Add Device for up to two minutes. Later reconnection uses a separate high-entropy device credential stored in Keychain. This description is not a promise that the numeric pairing design resists every possible attack.</p>
+
+    <h2>Your controls</h2>
+    <p>You can use Forget Mac or Forget Mac &amp; Pair Again on iPhone/iPad and revoke trusted controllers on Mac. Removing the app does not always remove Keychain items under Apple platform behavior; use the in-app forget/revoke controls before uninstalling if you want to remove a saved pairing.</p>
+
+    <h2>Website data</h2>
+    <p>This static website is planned to be hosted through GitHub Pages. PointerDeck adds no analytics, cookies, forms, or remote fonts. GitHub may process technical request information such as IP address, user agent, timestamp, and requested page under GitHub’s own privacy terms and operational practices.</p>
+
+    <h2>Support email</h2>
+    <p>If you email support, your message, email address, and anything you choose to include will be handled through Gmail/Google and your own email provider. Send only the information needed to answer your question, and never send a live Connection PIN, trusted-device secret, password, certificate, or unrelated personal information.</p>
+
+    <h2>Children, accounts, and sales</h2>
+    <p>PointerDeck is not intended for the Kids category. It has no user account, in-app purchase, subscription, advertisement, or sale of personal information in the inspected release design.</p>
+
+    <h2>Contact and status</h2>
+    <p>Questions may be sent to <a href="mailto:elaymecht@gmail.com">elaymecht@gmail.com</a>. This pre-launch notice was updated on August 27, 2026. The final operator details and policy effective date will be added before this URL is used as the App Store privacy policy.</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>PointerDeck · Pre-launch information</span>
+    <span class="footer-links"><a href="support.html">Support</a><a href="mac.html">Mac receiver</a></span>
+  </footer>
+</body>
+</html>
