@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Installation and permission guidance for PointerDeck Receiver on Mac.">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Download PointerDeck Receiver 1.0 for Apple silicon and Intel Macs running macOS 14 or later.">
   <title>Mac Receiver — PointerDeck</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p class="draft-banner" role="status">PointerDeck is preparing for launch. The app and Receiver are not yet publicly available.</p>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">PD</span>PointerDeck</a>
@@ -26,38 +25,45 @@
     <h1 class="page-title">PointerDeck Receiver for Mac</h1>
     <p class="lede">The receiver is the small Mac app that accepts trackpad commands from your iPhone or iPad. It is required, free, and does not add an account or subscription.</p>
 
-    <div class="notice"><strong>No public download is available yet.</strong> Only the final signed, notarized, stapled, clean-Mac-tested, and checksum-verified Receiver will be offered here.</div>
-    <p><button class="button" type="button" disabled>Download not yet available</button></p>
+    <div class="notice"><strong>Verified release:</strong> version 1.0 (build 1), Developer ID signed, notarized by Apple, and stapled. The app inside the ZIP passes Gatekeeper and signature checks after extraction.</div>
+    <p><a class="button" href="https://ilushamesh-max.github.io/pointerdeck/PointerDeck-Receiver-1.0-1-Cobalt-Notarized.zip">Download PointerDeck Receiver 1.0</a></p>
 
-    <h2>Planned requirements</h2>
+    <h2>Requirements</h2>
     <ul>
       <li>macOS 14 or later.</li>
-      <li>Final supported architecture shown beside the released download.</li>
+      <li>Apple silicon or Intel Mac.</li>
       <li>Same local network as the iPhone or iPad.</li>
       <li>Accessibility permission for pointer movement, clicks, drags, and scrolling.</li>
     </ul>
 
-    <h2>Final installation steps</h2>
+    <h2>Installation</h2>
     <ol>
       <li>Download the versioned receiver from this HTTPS page.</li>
-      <li>Verify the displayed filename, version, architecture, and SHA-256 when required by your organization.</li>
-      <li>Move PointerDeck Receiver to the Applications folder and open it normally. A released build must not require a Gatekeeper bypass.</li>
+      <li>Optional integrity check: verify the filename and SHA-256 shown below.</li>
+      <li>Open the ZIP, move PointerDeck Receiver to the Applications folder, and open it normally. Do not bypass Gatekeeper.</li>
       <li>Open System Settings &gt; Privacy &amp; Security &gt; Accessibility and allow the exact PointerDeck Receiver copy in Applications.</li>
-      <li>Set an 8–12 digit Connection PIN, choose Add Device, and pair from PointerDeck on the iPhone or iPad while the window is open for up to two minutes.</li>
+      <li>Create an 8–12 digit Connection PIN with at least five different digits. Repeated and sequential patterns are rejected. Choose Add Device, then pair from PointerDeck on the iPhone or iPad while the window is open for up to two minutes.</li>
     </ol>
 
     <h2>Why Accessibility is needed</h2>
     <p>macOS requires this permission before an app can post pointer, click, drag, and scroll events. PointerDeck Receiver does not use that permission to stream or display the Mac screen. If permission is denied, the receiver should remain available as a setup/status screen and explain how to return to System Settings.</p>
 
     <h2>Connection model</h2>
-    <p>Controller traffic is encrypted on the local network. The Connection PIN is accepted only while the Mac owner opens Add Device. After pairing, a separate trusted-device credential stored in Keychain supports later reconnection. The numeric PIN design is not described as unbreakable or universally secure.</p>
+    <p>Controller traffic is encrypted on the local network. The Connection PIN is accepted only while the Mac owner opens Add Device, and failed pairing attempts are bounded while that window is open. After pairing, a separate trusted-device credential stored in Keychain supports later reconnection. The numeric PIN design is not described as unbreakable or universally secure.</p>
 
-    <h2>Final download record</h2>
-    <p>The public release page will show one immutable versioned filename, receiver version/build, exact supported architecture, SHA-256, notarization status, Privacy Policy, and Support contact. Those values are intentionally absent until the final artifact exists.</p>
+    <h2>Download record</h2>
+    <ul>
+      <li>Version/build: 1.0 (1).</li>
+      <li>Filename: <code>PointerDeck-Receiver-1.0-1-Cobalt-Notarized.zip</code>.</li>
+      <li>Requirements: macOS 14 or later on Apple silicon or Intel.</li>
+      <li>SHA-256: <code>5d97b08fa99177865f2025ae65aba465c35c19eb86bd1e3f49eef2b7cd85e88e</code>.</li>
+      <li>Distribution: Developer ID signed, hardened runtime, secure timestamp, Apple notarization, and stapled ticket.</li>
+    </ul>
+    <p>Need help? Read <a href="support.html">PointerDeck Support</a>. See the <a href="privacy.html">Privacy Policy</a> for local pairing and data-handling details.</p>
   </main>
 
   <footer class="site-footer">
-    <span>PointerDeck · Pre-launch information</span>
+    <span>PointerDeck · Mac Receiver 1.0</span>
     <span class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></span>
   </footer>
 </body>
